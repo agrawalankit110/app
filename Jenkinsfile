@@ -1,6 +1,6 @@
 pipeline {
     
-  dockerImage = ''
+  
 
     
     agent any
