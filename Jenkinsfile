@@ -22,7 +22,12 @@ tools {
         }
         }
         
-        
+        stage('Deploy'){
+            steps{
+                
+            
+        }
         
     }
+}
 }
