@@ -11,9 +11,11 @@ pipeline {
         stage('Pre Build Stage') {
             
             steps {
+                script{
                // sh 'printenv'
                  environment.env()
-                echo 'Hello World'
+                }
+                    echo 'Hello World'
             }
         }
 
