@@ -32,7 +32,7 @@ tools {
            steps {
                 
                     script{
-                        sh 'docker build -t customimage .'
+                        sh 'docker build -t App/customimage .'
                     }
                 }
             }
