@@ -25,7 +25,7 @@ tools {
         stage('Deploy'){
             steps{
                 
-            
+             echo 'deployment'
         }
         
     }
