@@ -12,7 +12,7 @@ pipeline {
             
             steps {
                 script{
-               // sh 'printenv'
+               
                  environment.env()
                 }
                     echo 'Hello World'
