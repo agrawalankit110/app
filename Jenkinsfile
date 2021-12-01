@@ -30,9 +30,9 @@ tools {
         
         stage('docker build') {
            steps {
-                dir('/var/lib/jenkins/workspace/MyApp'){
+                
                     script{
-                        dockerImage = docker.build("customimage")
+                        sh 'docker build -t customimage .'
                     }
                 }
             }
