@@ -5,6 +5,7 @@ tools {
                maven "maven3.8.4"
            }
     stages {
+        
         stage('Hello') {
             steps {
                 echo 'Hello World'
@@ -19,15 +20,9 @@ tools {
                 
                     sh 'mvn clean install'
             
-        }
-        }
-        
-        stage('Deploy'){
-            steps{
-                
-             echo 'deployment'
+            }
         }
         
-    }
+       
 }
 }
