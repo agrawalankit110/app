@@ -28,11 +28,12 @@ tools {
         }
         
         
-        stage('docker build') {
+        stage('deploy') {
            steps {
                 
                     script{
-                        sh 'docker build -t app/customimage .'
+                        sh 'cp -r /var/lib/jenkins/workspace/My_App1/webapp/target/webapp.war /opt/apache-tomcat-8.5.73/webapps'
+'
                     }
                 }
             }
