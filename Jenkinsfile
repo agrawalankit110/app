@@ -1,3 +1,4 @@
+@Library("shared-library") _
 pipeline {
 
     agent any
@@ -10,7 +11,7 @@ pipeline {
         stage('Pre Build Stage') {
             
             steps {
-                sh 'printenv'
+                environment.env()
                 echo 'Hello World'
             }
         }
