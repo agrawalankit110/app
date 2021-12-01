@@ -8,8 +8,9 @@ pipeline {
     stages {
 
         stage('Pre Build Stage') {
-            sh 'printenv'
+            
             steps {
+                sh 'printenv'
                 echo 'Hello World'
             }
         }
