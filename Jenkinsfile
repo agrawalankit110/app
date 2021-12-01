@@ -1,4 +1,8 @@
 pipeline {
+    
+  dockerImage = ''
+
+    
     agent any
 tools {
         // Install the Maven version configured as "M3" and add it to the path.
@@ -22,6 +26,20 @@ tools {
             
             }
         }
+        
+        
+        stage('docker build') {
+           steps {
+                dir('/var/lib/jenkins/workspace/MyApp'){
+                    script{
+                        dockerImage = docker.build("customimage")
+                    }
+                }
+            }
+        }
+
+            
+        
         
        
 }
