@@ -33,7 +33,7 @@ tools {
                 
                     script{
                         
-                        sh 'sudo cp /var/lib/jenkins/workspace/My_App1/webapp/target/webapp.war /opt/apache-tomcat-8.5.73/webapps/'
+                        sh 'mv /var/lib/jenkins/workspace/My_App1/webapp/target/webapp.war /opt/apache-tomcat-8.5.73/webapps/'
 
 
                     }
